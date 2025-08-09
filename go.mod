@@ -5,7 +5,7 @@ go 1.22.3
 require (
 	github.com/gin-contrib/gzip v1.0.1
 	github.com/gin-contrib/sessions v1.0.1
-	github.com/gin-gonic/gin v1.10.0
+	github.com/gin-gonic/gin v1.10.1
 	github.com/goccy/go-json v0.10.3
 	github.com/mymmrac/telego v0.29.2
 	github.com/nicksnyder/go-i18n/v2 v2.4.0
