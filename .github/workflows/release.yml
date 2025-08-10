@@ -49,6 +49,15 @@ jobs:
             sudo apt-get install -y gcc-s390x-linux-gnu
           fi
 
+      - name: Prepare Go modules
+        run: |
+          set -eux
+          go env -w GOPROXY=https://proxy.golang.org,direct
+          go env -w GOSUMDB=sum.golang.org
+          test -f go.mod
+          go mod download
+          go mod tidy -v
+
       - name: Build x-ui
         run: |
           set -eux
